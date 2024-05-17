@@ -1,0 +1,10 @@
+##### PyInstaller Environment for Compiling App #####
+conda create -n env python=3.6
+conda activate env
+pip3 install PyQt5
+conda install geopandas
+conda install -c conda-forge pyinstaller
+pip install opencv-python==3.4.8.29
+pip install PyExifTool==0.4.13
+pip install pyqtgraph
+pip install auto-py-to-exe
