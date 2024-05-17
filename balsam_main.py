@@ -9,13 +9,7 @@ import sys
 import pyqtgraph as pg
 from PIL import Image
 
-# pyinstaller loses path to these libraries
-#import numpy.random.common
-#import numpy.random.bounded_integers
-#import numpy.random.entropy
-
 from numpy import asarray
-
 from model import Model
 
 os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
@@ -73,33 +67,6 @@ class MySlider(QWidget):
 
 
 class Advanced_Popup(QDialog):
-
-    #####################################################################################
-            
-    ### To Do ###
-    
-    #    
-    
-    # - Completed #### Flower Shape if 1 check bx checked, decheck other checkboxes 
-    # - Completed #### Make Labels Bold and larger text 
-    # - Completed #### Add previous button to Threshold detection widget 
-    # - Completed #### Send advance window data parameter values to model functionality
-    # - Completed #### Connect functionality to each step
-    # - Completed #### Added popup to show completed processing. 
-    # - Completed #### Load first image in folder to graphics view
-    # - Completed #### Plot images as numpy arrays to provide axis of pixel ranges. Replaced graphics view with pyqtgraph and plotted image as np.array.
-    # - Completed #### update next and previous functions if they are the last one in the list to reset from begining or end ect. 
-    # - Completed #### added text to line edits on mainwindow. 
-    # - Completed #### connect process button to update image array based on user inputs. 
-    # - Completed #### add a image reset 
-    # - Completed #### connect buttons to funcitonality. 
-    # - Completed #### change style of application to modern style - fusion. 
-    # - Completed #### changed defualt font to easier to read style - Calibri
-    # - Completed #### changed header font style to have underline set true, to help distinguish items
-    # - Completed #### modified button layout on advanced popup for easier viewing and use. 
-    
-    ######################################################################################
-
 
     def __init__(self):
         super().__init__()
@@ -384,7 +351,6 @@ class Advanced_Popup(QDialog):
         if fileName:
             self.checkPath(fileName)
             self.inCalFolderLineEdit.setText(fileName)
-#            self.refreshAll()
 
             dirpath = os.path.dirname(fileName)
             self.fileList = []
